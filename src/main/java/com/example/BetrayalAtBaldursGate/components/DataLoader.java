@@ -145,16 +145,6 @@ public class DataLoader implements ApplicationRunner {
         StreetTile waterfront = new StreetTile("Waterfront", Door.FALSE, Door.FALSE, Door.FALSE, Door.ROSE_PORTAL, Icon.EVENT);
         streetTileRepository.save(waterfront);
 
-//        BuildingTile warehouse = new BuildingTile("Warehouse", Door.FALSE, Door.FALSE, Door.FALSE, Door.FALSE, Icon.ITEM);
-//        buildingTileRepository.save(warehouse);
-
-//        StreetTile ambushAlley = new StreetTile("Ambush Alley", Door.FALSE, Door.FALSE, Door.FALSE, Door.FALSE, Icon.EVENT);
-//        streetTileRepository.save(ambushAlley);
-
-
-//        StreetTile watchPost = new StreetTile("Watch Post", Door.FALSE, Door.FALSE, Door.FALSE, Door.FALSE, Icon.EVENT);
-//        streetTileRepository.save(watchPost);
-
         Monster intelDevour = new Monster("Intellect Devourer",3,3,0,5,"Intellect Devourer", "url");
         monsterRepository.save(intelDevour);
 
@@ -228,7 +218,7 @@ public class DataLoader implements ApplicationRunner {
 
 
         OmenCard berserkerAxe = new OmenCard(
-                "This axe was made to kill. It just needs you to help it fullfill its destiny",
+                "This axe was made to kill. It just needs you to help it fulfill its destiny",
                 "Berserker Axe",
                 "Your roll 2 additional dice (maximum of 8 dice) when making a Might attack with this weapon."
                         + "If you are on a tile with one or more opponents, you cannot leave that tile unless you " +
@@ -314,7 +304,7 @@ public class DataLoader implements ApplicationRunner {
                 "Meenlock",
                 "Gain 2 Speed." +
                         "When you take physical damage, you must apply it as mental damage instead" +
-                        "Lose 2 Speed if you loase control of the Meenlock" +
+                        "Lose 2 Speed if you lose control of the Meenlock" +
                         "This omen can't be dropped, traded, or stolen" +
                         "Make a haunt roll now");
         omenCardRepository.save(meenLock);
@@ -336,7 +326,7 @@ public class DataLoader implements ApplicationRunner {
         omenCardRepository.save(homonculus);
 
         OmenCard figurineOfWonder = new OmenCard("Companion: The small ebony statuette, shaped like a fly, fits in the palm of your hand",
-                "Figurine of Wonderous Power",
+                "Figurine of Wondrous Power",
                 "The figurine transforms into a giant fly that stays with you and protects you.Once per game, when you take any amount of damage, you may ignore that damage instead." +
                         "This omen can't be dropped, traded, or stolen." +
                         "Make a haunt roll now.");

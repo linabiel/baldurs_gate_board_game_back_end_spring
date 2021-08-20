@@ -13,10 +13,8 @@ import java.util.List;
 @RestController
 public class StreetTileController {
 
-
     @Autowired
     StreetTileRepository streetTileRepository;
-
 
     @GetMapping(value = "/street_tiles")
     public ResponseEntity<List<StreetTile>> getAllStreetTiles(){

@@ -6,8 +6,6 @@ import javax.persistence.*;
 @Table(name = "item_cards")
 public class ItemCard extends Card{
 
-
-
     public ItemCard(String flavourText, String name, String functionText){
         super(flavourText, name, functionText);
     }

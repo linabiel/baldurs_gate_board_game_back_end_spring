@@ -103,28 +103,28 @@ Hero extends Character {
         this.age = age;
     }
 
-    public Tile move(GameState game, Integer direction) {
+    public void move(GameState game, Integer direction) {
         String intendedTile = null;
         if (direction == 1){
-            if (this.tile.getWestDoor().getName() == "False"){
+            if (this.tile.getWestDoor().getName().equals("False")){
                 intendedTile = this.getTile().getName();
             } else {
                 intendedTile = this.tile.getWestDoor().getName();
             };
         } else if(direction == 2){
-            if (this.tile.getEastDoor().getName() == "False"){
+            if (this.tile.getEastDoor().getName().equals("False")){
                 intendedTile = this.getTile().getName();
             } else {
                 intendedTile = this.tile.getEastDoor().getName();
             };
         } else if (direction == 3){
-            if (this.tile.getNorthDoor().getName() == "False"){
+            if (this.tile.getNorthDoor().getName().equals("False")){
                 intendedTile = this.getTile().getName();
             } else {
                 intendedTile = this.tile.getNorthDoor().getName();
             };
         } else if (direction == 4){
-            if (this.tile.getSouthDoor().getName() == "False"){
+            if (this.tile.getSouthDoor().getName().equals("False")){
                 intendedTile = this.getTile().getName();
             } else {
                 intendedTile = this.tile.getSouthDoor().getName();
@@ -142,6 +142,5 @@ Hero extends Character {
                 this.setTile(streetTile);
             }
         });
-        return this.getTile();
     }
 }

@@ -25,8 +25,4 @@ public class EventCardController {
         return new ResponseEntity<>(eventCardRepository.findAll(), HttpStatus.OK);
     }
 
-//    @GetMapping(value = "/cards")
-//    public ResponseEntity<List<Card>> getAllCards(){
-//        return new ResponseEntity<>(cardService.generateACard(), HttpStatus.OK);
-//    }
 }
